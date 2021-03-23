@@ -21,8 +21,8 @@ function setup() {
   car4=new Car(550,480,200,200)
   car5=new Car(450,480,200,200)
   car6=new Car(500,420,200,200)
-  slingshot = new SlingShot(bomb.body,{x:400, y:400});
   bomb=new Bomb(400,400,50,50)
+  slingshot = new SlingShot(bomb.body,{x:400, y:400});
 
 }
 
@@ -37,8 +37,8 @@ function draw() {
   car5.display()
   car6.display()
   ground.display()
-  sligshot.display()
   bomb.display()
+  slingshot.display()
   drawSprites();
 }
 
