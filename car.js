@@ -10,7 +10,7 @@ class Car {
       this.width = width;
       this.height = height;
       
-      //World.add(world, this.body);
+      World.add(world, this.body);
     }
     display(){
       var pos =this.body.position;
@@ -18,10 +18,8 @@ class Car {
       push();
       translate(pos.x, pos.y);
       rotate(angle);
-      rectMode(CENTER);
-
-      fill("green");
-      image(this.image,0, 0, this.width, this.height);
+      imageMode(CENTER);
+      image(this.image,0, 0, 200, 200);
       pop();
     }
   };

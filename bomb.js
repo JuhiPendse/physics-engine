@@ -13,8 +13,6 @@ class Bomb {
     };
     display(){
       var pos = this.body.position;
-      pos.x = mouseX;
-      pos.y = mouseY;
       var angle = this.body.angle;
   
       push();
@@ -23,7 +21,7 @@ class Bomb {
       strokeWeight(3);
       stroke('blue')
       fill('red')
-      rectMode(CENTER)
+      imageMode(CENTER)
       image(this.image,0, 0, this.width, this.height);
       pop();
     };
